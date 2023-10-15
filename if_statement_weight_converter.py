@@ -5,11 +5,11 @@
 weight = input("Weight: ")
 code = input("L OR K")
 
-if code == "l":
-    weight = float(weight) * 0.5
+if code.upper == "L":
+    weight = float(weight) * 0.45
     print(weight)
-elif code == "k":
-    weight = float(weight) *2
+elif code.upper == "K":
+    weight = float(weight) / 0.45
     print(weight)
 else:
     print("again")
