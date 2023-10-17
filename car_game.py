@@ -3,15 +3,34 @@
 ## Option: Start, Stop, Quit.
 ## Can't understand for other words.
 
-input = input("")
+command = ""
 
-if input.upper == "HELP":
-    print("info")
-elif input.upper == "START":
-    print("Car started... Ready to go!")
-elif input.upper == "STOP":
-    print("Car stopped.")
-elif input.upper == "QUIT":
-    quit
-else:
-    print("I don't understand that...")
+while True:
+    command = input("> ").lower
+    if command == "start":
+        print("Started...")
+    elif command == "stop":
+        print("Stopped.")
+    elif command == "quit":
+        break
+    elif command == "help":
+        print("info")
+    else:
+        print("errror77")
+
+
+
+'''
+给个容器存放输入的内容；
+循环的输入内容：
+    if start:
+        print 
+    elif stop:
+        print
+    elif quit:
+        break
+    elif help:
+        print
+    else:
+        print
+'''
